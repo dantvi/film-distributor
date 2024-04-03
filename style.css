@@ -10,10 +10,24 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    margin: 0;
+}
+
+a {
+    margin-right: 25px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .header {
     background-color: beige;
     height: 80px;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo-container {
@@ -21,8 +35,24 @@ body {
     margin-left: 15px;
 }
 
+.logo-text {
+    margin: 15px 0px;
+}
+
 .logo {
     height: 50px;
     margin-top: 5px;
     margin-left: 5px;
+}
+
+.aside {
+    background-color: aquamarine;
+}
+
+.main {
+    background-color: blanchedalmond;
+}
+
+.footer {
+    background-color: brown;
 }
