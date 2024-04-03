@@ -1,6 +1,12 @@
 
 /* Lägg in Google Fonts här! */
 
+:root {
+    --primary-color: #000000;
+    --secondary-color: #F5F5F5;
+    --hover-color: #60666d;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -8,23 +14,49 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    background: url(./img/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
 }
 
 h1 {
     margin: 0;
+    font-size: 3rem;
+}
+
+h2 {
+    margin: 0;
+    text-decoration: underline;
 }
 
 a {
-    margin-right: 25px;
-    color: rgb(0, 0, 0);
+    color: var(--secondary-color);
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
 }
 
+a:hover {
+    color: var(--hover-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+li {
+    margin: 8px;
+}
+
 .header {
-    background-color: beige;
-    height: 80px;
+    height: 6vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,18 +73,66 @@ a {
 
 .logo {
     height: 50px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-link {
+    margin-right: 25px;
+}
+
+.main-container {
+    display: flex;
+    height: 90vh;
 }
 
 .aside {
-    background-color: aquamarine;
+    width: 15%;
+}
+
+.search-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-label {
+    font-size: 1.5rem;
+}
+
+.search-field {
+    width: 70%;
+    height: 25px;
+    margin: 10px 0px;
+    font-size: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+.search-btn {
+    width: 20%;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.search-btn:hover {
+    background-color: var(--hover-color);
+}
+
+.genre-container {
+    margin-top: 50px;
 }
 
 .main {
-    background-color: blanchedalmond;
+    width: 85%;
 }
 
 .footer {
-    background-color: brown;
+    height: 4vh;
 }
