@@ -164,10 +164,11 @@ li {
     border-radius: 15px 15px 0px 0px; 
  }
 
-
-
-
-
 .footer {
     height: 4vh;
+    font-size: 18px;
+}
+
+.fa-github {
+    font-size: 15px;
 }
