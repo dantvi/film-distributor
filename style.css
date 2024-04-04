@@ -1,4 +1,3 @@
-
 :root {
     --primary-color: #000000;
     --secondary-color: #F5F5F5;
@@ -191,16 +190,17 @@ p {
 /* Media Query: Large devices */
 @media screen and (max-width: 1578px) {
     .aside {
-        width: 30%;
+        width: 230px;
     }
 
     .main {
-        width: 70%;
+        width: 100%;
     }
 
     .card-container {
         justify-content: space-evenly;
         padding-bottom: 50px;
+        gap: 25px 5px;
     }
 
     .footer {
