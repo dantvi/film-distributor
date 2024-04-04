@@ -164,6 +164,18 @@ li {
     border-radius: 15px 15px 0px 0px; 
  }
 
+.card-text-container {
+    margin-top: 10px;
+}
+
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 3px 0px;
+}
+
 .footer {
     height: 4vh;
     font-size: 18px;
