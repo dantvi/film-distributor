@@ -188,6 +188,28 @@ p {
     font-size: 15px;
 }
 
+/* Media Query: Large devices */
+@media screen and (max-width: 1578px) {
+    .aside {
+        width: 30%;
+    }
+
+    .main {
+        width: 70%;
+    }
+
+    .card-container {
+        justify-content: space-evenly;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        position: fixed;
+        width: 100vw;
+        background: var(--primary-color);
+    }
+}
+
 /* Media Query: Phone (Vertical) */
 @media screen and (max-width: 600px) {
     .genre-container {
@@ -196,24 +218,20 @@ p {
 
     .main-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .aside {
-        width: 90vw;
+        width: 96vw;
     }
 
     .main {
         width: 90vw;
+        margin-left: 0;
     }
 
     .card-container {
         justify-content: center;
         padding-bottom: 50px;
-    }
-
-    .footer {
-        position: fixed;
-        width: 100vw;
-        background: var(--primary-color);
     }
 }
