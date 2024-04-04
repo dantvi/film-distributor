@@ -143,7 +143,7 @@ li {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 20px 35px;
+    gap: 25px 35px;
 }
 
 .card {
@@ -186,4 +186,34 @@ p {
 
 .fa-github {
     font-size: 15px;
+}
+
+/* Media Query: Phone (Vertical) */
+@media screen and (max-width: 600px) {
+    .genre-container {
+        margin-top: 10px;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .aside {
+        width: 90vw;
+    }
+
+    .main {
+        width: 90vw;
+    }
+
+    .card-container {
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+
+    .footer {
+        position: fixed;
+        width: 100vw;
+        background: var(--primary-color);
+    }
 }
