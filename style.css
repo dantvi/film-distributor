@@ -22,37 +22,6 @@ body {
     text-align: center;
 }
 
-h1 {
-    margin: 0;
-    font-size: 3rem;
-}
-
-h2 {
-    margin: 0;
-    text-decoration: underline;
-}
-
-a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-a:hover {
-    color: var(--hover-color);
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-transform: uppercase;
-}
-
-li {
-    margin: 8px;
-}
-
 .header {
     height: 6vh;
     display: flex;
@@ -63,6 +32,11 @@ li {
 .logo-container {
     display: flex;
     margin-left: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 3rem;
 }
 
 .logo-text {
@@ -78,6 +52,17 @@ li {
 
 .nav-link {
     margin-right: 25px;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+a:hover {
+    color: var(--hover-color);
 }
 
 .main-container {
@@ -108,6 +93,7 @@ li {
     border-radius: 10px;
     text-align: center;
     border: none;
+    outline: none;
 }
 
 .search-btn {
@@ -123,8 +109,27 @@ li {
     background-color: var(--hover-color);
 }
 
+.search-btn:focus {
+    outline: none;
+}
+
 .genre-container {
     margin-top: 50px;
+}
+
+h2 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+li {
+    margin: 8px;
 }
 
 .main {
@@ -158,6 +163,10 @@ li {
     height: 250px;
     border-radius: 15px 15px 0px 0px; 
  }
+
+
+
+
 
 .footer {
     height: 4vh;
